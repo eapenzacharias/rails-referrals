@@ -8,4 +8,14 @@ class Api::ReferralsController < ApplicationController
     msg = { success: true, data: referrals, count: count }
     render json: msg, status: :ok
   end
+
+  def referred_by
+    referrer = nil
+    if current_api_user.referrer
+      referrer_id = current_api_user.referrer
+      referrer = User.find(referrer_id)
+    end
+    msg = { success: true, data: referrer}
+    render json: msg, status: :ok
+  end
 end
