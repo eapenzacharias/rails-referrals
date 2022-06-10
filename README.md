@@ -4,10 +4,6 @@
 
 User can share there referral link or send a referral email and track count of total successful referals and there names.
 
-### [API Documentation](https://pick-a-doc.herokuapp.com/api-docs/index.html)
-### API URL: https://pick-a-doc.herokuapp.com/api/
-
-
 ## Built With
 
 - Ruby on Rails
