@@ -5,14 +5,13 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <p><%= current_api_user.name %> invited you to join Rails Referrals!</p>
+    <p><%= @name %> invited you to join Rails Referrals!</p>
     <p>
       Click on this link to join!
       ----------------------------------------------
     </p>
-    <%= link_to %>
-    <%= link_to @Referral_link, @Referral_link, :target => "_blank" %>
-  </p>
-  <p> </p>
-</body>
+    <p>
+      <%= link_to "#{@referral_link}", "#{@referral_link}", :target => "_blank" %>
+    </p>
+  </body>
 </html>
