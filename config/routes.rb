@@ -6,5 +6,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   namespace :api, default: {format: :json} do
     mount_devise_token_auth_for 'User', at: 'auth'
+    resources :referrals, only: [:index]
+    get '/referred_by', to: 'referrals#referred_by'
+    post '/send_invite/', to: 'referrals#send_invite'
   end
 end

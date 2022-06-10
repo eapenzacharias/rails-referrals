@@ -1,0 +1,17 @@
+# app/views/order_mailer/new_order_email.html.erb
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p><%= @name %> invited you to join Rails Referrals!</p>
+    <p>
+      Click on this link to join!
+      ----------------------------------------------
+    </p>
+    <p>
+      <%= link_to "#{@referral_link}", "#{@referral_link}", :target => "_blank" %>
+    </p>
+  </body>
+</html>

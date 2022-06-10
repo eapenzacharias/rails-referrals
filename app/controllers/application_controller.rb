@@ -7,6 +7,6 @@ class ApplicationController < ActionController::API
 
   def update_allowed_parameters
     devise_parameter_sanitizer.permit(:sign_up,
-                                      keys: %i[name password password_confirmation email])
+                                      keys: %i[name password password_confirmation email referrer])
   end
 end
