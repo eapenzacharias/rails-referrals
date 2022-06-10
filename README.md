@@ -4,6 +4,7 @@
 
 User can share there referral link or send a referral email and track count of total successful referals and there names.
 
+### Current API URL: `https://rails-referrals.herokuapp.com/api/`
 ## Built With
 
 - Ruby on Rails
